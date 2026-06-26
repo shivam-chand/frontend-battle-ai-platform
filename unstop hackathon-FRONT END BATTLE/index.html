@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Platform Landing Page</title>
+    <meta name="description" content="Premium AI Data Platform">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>AI.Platform</h2>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Advanced AI Data Automation</h1>
+            <p>The future of data is here.</p>
+        </section>
+
+        <section class="features-section">
+            <h2>Our Powerful Features</h2>
+            
+            <div class="bento-wrapper">
+                <div class="bento-box box-1" data-index="0" tabindex="0" onclick="toggleAccordion(0)">
+                    <div class="bento-header">
+                        <img src="cube-16-solid.svg" alt="Automation" style="width: 28px; height: 28px; margin-bottom: 8px; filter: invert(74%) sepia(51%) saturate(2371%) hue-rotate(170deg) brightness(101%) contrast(98%);">
+                        <h3>AI Automation</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="bento-content">
+                        <p>Streamline your workflows with our next-gen neural network data pipelines.</p>
+                    </div>
+                </div>
+
+                <div class="bento-box box-2" data-index="1" tabindex="0" onclick="toggleAccordion(1)">
+                    <div class="bento-header">
+                        <img src="chart-pie.svg" alt="Analytics" style="width: 28px; height: 28px; margin-bottom: 8px; filter: invert(74%) sepia(51%) saturate(2371%) hue-rotate(170deg) brightness(101%) contrast(98%);">
+                        <h3>Real-time Analytics</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="bento-content">
+                        <p>Monitor live metrics and processing speed globally with sub-millisecond latency.</p>
+                    </div>
+                </div>
+
+                <div class="bento-box box-3" data-index="2" tabindex="0" onclick="toggleAccordion(2)">
+                    <div class="bento-header">
+                        <img src="cog-8-tooth.svg" alt="Security" style="width: 28px; height: 28px; margin-bottom: 8px; filter: invert(74%) sepia(51%) saturate(2371%) hue-rotate(170deg) brightness(101%) contrast(98%);">
+                        <h3>Cloud Security</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="bento-content">
+                        <p>Your data is safe with enterprise-grade zero-knowledge encryption protocols.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <h2>Our Pricing Plans</h2>
+            
+            <div class="pricing-controls">
+                <div class="billing-toggle">
+                    <button id="btn-monthly" onclick="changeBilling('monthly')" style="background: #38bdf8; color: #0b0f19; border: none; padding: 8px 16px; border-radius: 6px; font-weight: bold; cursor: pointer; margin-right: 10px;">Monthly</button>
+                    <button id="btn-annual" onclick="changeBilling('annual')" style="background: #1e293b; color: #ffffff; border: 1px solid #475569; padding: 8px 16px; border-radius: 6px; font-weight: bold; cursor: pointer;">Annual (20% Off)</button>
+                </div>
+
+                <select id="currency" onchange="changePrice()">
+                    <option value="USD">USD ($)</option>
+                    <option value="INR">INR (₹)</option>
+                    <option value="EUR">EUR (€)</option>
+                </select>
+            </div>
+
+            <div class="card">
+                <h3>Starter Plan</h3>
+                <p class="price-text"><span id="symbol">$</span><span id="amount">19</span></p>
+            </div>
+        </section>   
+
+        <footer style="margin-top: 50px; color: #475569; font-size: 14px; text-align: center; padding-bottom: 20px;">
+            Built with ⚡ Shivam Chand | Class 8 Developer Elite
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
