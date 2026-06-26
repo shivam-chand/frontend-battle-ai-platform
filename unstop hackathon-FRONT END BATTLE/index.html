@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Platform Landing Page</title>
     <meta name="description" content="Premium AI Data Platform">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +16,6 @@
             <nav class="nav-links">
                 <a href="#features">Features</a>
                 <a href="#pricing">Pricing</a>
-                <a href="#docs" class="nav-hidden-mobile">Docs</a>
             </nav>
             <button class="launch-btn">Launch App</button>
         </div>
@@ -42,10 +42,10 @@
         <section class="trusted-section">
             <p>TRUSTED BY WORLD LEADING ENTERPRISE TEAMS</p>
             <div class="logo-grid">
-                <span>Acme Corp</span>
-                <span>StarkIndustries</span>
-                <span>Cyberdyne</span>
-                <span>Umbrella Corp</span>
+                <span><i class="fa-solid fa-building-shield"></i> Acme Corp</span>
+                <span><i class="fa-solid fa-bolt"></i> StarkIndustries</span>
+                <span><i class="fa-solid fa-robot"></i> Cyberdyne</span>
+                <span><i class="fa-solid fa-shield-halved"></i> Umbrella Corp</span>
             </div>
         </section>
 
@@ -56,7 +56,7 @@
             <div class="bento-wrapper">
                 <div class="bento-box box-1" data-index="0" tabindex="0" onclick="toggleAccordion(0)">
                     <div class="bento-header">
-                        <img src="cube-16-solid.svg" alt="Automation" style="width: 28px; height: 28px; margin-bottom: 8px; filter: invert(74%) sepia(51%) saturate(2371%) hue-rotate(170deg) brightness(101%) contrast(98%);">
+                        <i class="fa-solid fa-cubes feature-icon"></i>
                         <h3>AI Automation</h3>
                         <span class="accordion-icon">+</span>
                     </div>
@@ -67,7 +67,7 @@
 
                 <div class="bento-box box-2" data-index="1" tabindex="0" onclick="toggleAccordion(1)">
                     <div class="bento-header">
-                        <img src="chart-pie.svg" alt="Analytics" style="width: 28px; height: 28px; margin-bottom: 8px; filter: invert(74%) sepia(51%) saturate(2371%) hue-rotate(170deg) brightness(101%) contrast(98%);">
+                        <i class="fa-solid fa-chart-pie feature-icon"></i>
                         <h3>Real-time Analytics</h3>
                         <span class="accordion-icon">+</span>
                     </div>
@@ -78,7 +78,7 @@
 
                 <div class="bento-box box-3" data-index="2" tabindex="0" onclick="toggleAccordion(2)">
                     <div class="bento-header">
-                        <img src="cog-8-tooth.svg" alt="Security" style="width: 28px; height: 28px; margin-bottom: 8px; filter: invert(74%) sepia(51%) saturate(2371%) hue-rotate(170deg) brightness(101%) contrast(98%);">
+                        <i class="fa-solid fa-gears feature-icon"></i>
                         <h3>Cloud Security</h3>
                         <span class="accordion-icon">+</span>
                     </div>
@@ -111,9 +111,9 @@
                 <p class="price-subtitle">Ideal for fast-growing development setups.</p>
                 <p class="price-text"><span id="symbol">$</span><span id="amount">19</span></p>
                 <ul class="plan-features">
-                    <li>✓ Full Access to Neural Pipelines</li>
-                    <li>✓ 24ms Real-time Global Data Sync</li>
-                    <li>✓ Advanced Analytics Hooks</li>
+                    <li><i class="fa-solid fa-check" style="color: #38bdf8; margin-right: 8px;"></i> Full Access to Neural Pipelines</li>
+                    <li><i class="fa-solid fa-check" style="color: #38bdf8; margin-right: 8px;"></i> 24ms Real-time Global Data Sync</li>
+                    <li><i class="fa-solid fa-check" style="color: #38bdf8; margin-right: 8px;"></i> Advanced Analytics Hooks</li>
                 </ul>
                 <button class="plan-btn">Deploy Plan</button>
             </div>
