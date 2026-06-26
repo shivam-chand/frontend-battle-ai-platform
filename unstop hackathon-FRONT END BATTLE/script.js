@@ -15,33 +15,29 @@ const pricingMatrix = {
 // ==========================================================================
 // 2. FEATURE 1: DYNAMIC PRICING CORE LOGIC
 // ==========================================================================
-function changeBilling(type) {
-    currentBilling = type;
-
-    const btnMonthly = document.getElementById('btn-monthly');
-    const btnAnnual = document.getElementById('btn-annual');
-
-    // UI Toggle Switch Styling
-    if (type === 'monthly') {
-        btnMonthly.style.background = '#38bdf8';
-        btnMonthly.style.color = '#0b0f19';
-        btnAnnual.style.background = '#1e293b';
-        btnAnnual.style.color = '#ffffff';
-    } else {
-        btnAnnual.style.background = '#38bdf8';
-        btnAnnual.style.color = '#0b0f19';
-        btnMonthly.style.background = '#1e293b';
-        btnMonthly.style.color = '#ffffff';
-    }
-
-    calculatePrice();
-}
 
 function changePrice() {
     currentCurrency = document.getElementById('currency').value;
     calculatePrice();
 }
-
+function changeBilling(type) {
+    currentBilling = type;
+    const btnMonthly = document.getElementById('btn-monthly');
+    const btnAnnual = document.getElementById('btn-annual');
+    
+    if (type === 'monthly') {
+        btnMonthly.style.background = '#FFC801';
+        btnMonthly.style.color = '#172836';
+        btnAnnual.style.background = '#114C5A';
+        btnAnnual.style.color = '#F1F6F4';
+    } else {
+        btnAnnual.style.background = '#FFC801';
+        btnAnnual.style.color = '#172836';
+        btnMonthly.style.background = '#114C5A';
+        btnMonthly.style.color = '#F1F6F4';
+    }
+    changePrice();
+}
 function calculatePrice() {
     const data = pricingMatrix[currentCurrency];
     let finalPrice = data.basePrice;
