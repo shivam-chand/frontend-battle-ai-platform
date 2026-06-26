@@ -10,19 +10,48 @@
 <body>
 
     <header>
-        <nav>
+        <div class="header-container">
             <h2>AI.Platform</h2>
-        </nav>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#docs" class="nav-hidden-mobile">Docs</a>
+            </nav>
+            <button class="launch-btn">Launch App</button>
+        </div>
     </header>
     
     <main>
         <section class="hero">
-            <h1>Advanced AI Data Automation</h1>
-            <p>The future of data is here.</p>
+            <span class="badge">v2.0 Next-Gen Release</span>
+            <h1>Automate your data.<br><span class="gradient-text">Amplify your impact.</span></h1>
+            <p>The future of data automation is here. Deploy neural network pipelines with sub-millisecond latency globally.</p>
+            
+            <div class="hero-buttons">
+                <button class="primary-btn" onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})">Get Started Free</button>
+                <button class="secondary-btn" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">View Features</button>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item"><h3>99.9%</h3><p>Uptime Guarantee</p></div>
+                <div class="stat-item"><h3>&lt; 24ms</h3><p>Global Latency</p></div>
+                <div class="stat-item"><h3>10M+</h3><p>API Requests</p></div>
+            </div>
         </section>
 
-        <section class="features-section">
+        <section class="trusted-section">
+            <p>TRUSTED BY WORLD LEADING ENTERPRISE TEAMS</p>
+            <div class="logo-grid">
+                <span>Acme Corp</span>
+                <span>StarkIndustries</span>
+                <span>Cyberdyne</span>
+                <span>Umbrella Corp</span>
+            </div>
+        </section>
+
+        <section class="features-section" id="features">
             <h2>Our Powerful Features</h2>
+            <p class="section-subtitle">Engineered for extreme performance and absolute security.</p>
             
             <div class="bento-wrapper">
                 <div class="bento-box box-1" data-index="0" tabindex="0" onclick="toggleAccordion(0)">
@@ -32,7 +61,7 @@
                         <span class="accordion-icon">+</span>
                     </div>
                     <div class="bento-content">
-                        <p>Streamline your workflows with our next-gen neural network data pipelines.</p>
+                        <p>Streamline your infrastructure workflows with our next-gen neural network data pipelines and automatic self-healing nodes.</p>
                     </div>
                 </div>
 
@@ -43,7 +72,7 @@
                         <span class="accordion-icon">+</span>
                     </div>
                     <div class="bento-content">
-                        <p>Monitor live metrics and processing speed globally with sub-millisecond latency.</p>
+                        <p>Monitor live metrics, financial logs, and core cloud processing speeds globally with real-time custom dashboard hooks.</p>
                     </div>
                 </div>
 
@@ -54,14 +83,15 @@
                         <span class="accordion-icon">+</span>
                     </div>
                     <div class="bento-content">
-                        <p>Your data is safe with enterprise-grade zero-knowledge encryption protocols.</p>
+                        <p>Your enterprise database is fundamentally secure with strict zero-knowledge encryption keys and automatic compliance protocols.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="pricing">
+        <section class="pricing" id="pricing">
             <h2>Our Pricing Plans</h2>
+            <p class="section-subtitle">Pick a deployment strategy that scales cleanly with your tech stack.</p>
             
             <div class="pricing-controls">
                 <div class="billing-toggle">
@@ -78,11 +108,18 @@
 
             <div class="card">
                 <h3>Starter Plan</h3>
+                <p class="price-subtitle">Ideal for fast-growing development setups.</p>
                 <p class="price-text"><span id="symbol">$</span><span id="amount">19</span></p>
+                <ul class="plan-features">
+                    <li>✓ Full Access to Neural Pipelines</li>
+                    <li>✓ 24ms Real-time Global Data Sync</li>
+                    <li>✓ Advanced Analytics Hooks</li>
+                </ul>
+                <button class="plan-btn">Deploy Plan</button>
             </div>
         </section>   
 
-        <footer style="margin-top: 50px; color: #475569; font-size: 14px; text-align: center; padding-bottom: 20px;">
+        <footer style="margin-top: 100px; color: #475569; font-size: 14px; text-align: center; padding-bottom: 40px; border-top: 1px solid rgba(51,65,85,0.3); width:100%; max-width:1000px; padding-top:25px;">
             Built with ⚡ Shivam Chand | Class 8 Developer Elite
         </footer>
     </main>
